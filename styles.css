@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('fonts/lato-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('fonts/lato-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --bg-color: #121212;
+  --text-color: #E0E0E0;
+  --accent-color: #3279c0;
+  --secondary-text: #BBBBBB;
+  --border-color: #333333;
+  --hover-color: #64AFFF;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+img.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid var(--accent-color);
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-weight: 700;
+  margin: 0.2rem 0;
+  font-size: 2.5rem;
+}
+
+p.slogan {
+  font-weight: 400;
+  color: var(--secondary-text);
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 2rem;
+}
+
+.social-icons a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover,
+.social-icons a:focus {
+  color: var(--hover-color);
+  outline: none;
+}
+
+.social-icons a:focus-visible {
+  outline: 3px solid var(--hover-color);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+footer {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: var(--secondary-text);
+  text-align: center;
+}
+
+footer a {
+  color: var(--accent-color);
+  text-decoration: underline;
+  margin: 0 0.5rem;
+}
+
+footer a:hover,
+footer a:focus {
+  text-decoration: underline !important;
+  outline: none;
+}
+
+/* Responsive Anpassungen */
+
+@media (max-width: 400px) {
+  body.index h1 {
+    font-size: 2rem;
+  }
+  p.slogan {
+    font-size: 1rem;
+  }
+  .social-icons {
+    font-size: 1.5rem;
+    gap: 1rem;
+  }
+  img.avatar {
+    width: 120px;
+    height: 120px;
+  }
+}
