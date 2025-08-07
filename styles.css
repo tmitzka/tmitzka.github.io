@@ -129,3 +129,19 @@ footer a:focus {
     height: 120px;
   }
 }
+
+/* Optimierung für Querformat am Smartphone */
+
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  body {
+    padding: 1rem;
+    height: auto;
+  }
+
+  img.avatar {
+    max-height: 30vh;
+    width: auto;
+    height: auto;
+  }
+}
+
