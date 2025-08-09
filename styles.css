@@ -70,7 +70,7 @@ p.slogan {
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 2.5rem;
   font-size: 2rem;
 }
 
